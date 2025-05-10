@@ -9,6 +9,8 @@
 
 [q&a_preprocess.py](https://github.com/myxp-lyp/Depression-detection/tree/main/Data%20preprocess/q&a_preprocess.py): This file is used to generate the q&a set. You need to fill in the API_KEY section before you run this, if you don't have one, you would have to sign up an DeepSeek account at [here](https://platform.deepseek.com/sign_up), or use third party services (then you will also need to modify DEEPSEEK_API_URL). **This will cost approximately 1.55 CNY (0.21 USD).**
 
+---
+
 ### Model training section
 
 *It is recommended to completely run all files under data preprocessing section before running files below.*
