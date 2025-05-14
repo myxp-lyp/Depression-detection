@@ -27,7 +27,7 @@
 
 [transcript.py](https://github.com/myxp-lyp/Depression-detection/blob/main/Model%20training/transcript.py), [qa_transcript.py](https://github.com/myxp-lyp/Depression-detection/blob/main/Model%20training/qa_transcript.py): These two files are used to train and evaluate the "transcript" and "qa_transcript" model respectively. This file can be run directly.
 > Note that in order to use the model created by this file, you will need to add the following code:
-'''
+```
 from safetensors.torch import load_file, save_file
 
 sd = load_file("/path/to/bad_adapter.safetensors")
@@ -41,7 +41,7 @@ for k, v in sd.items():
     new_sd[new_key] = v
 
 save_file(new_sd, "/path/to/fixed_adapter.safetensors")
-'''
+```
 
 [audio.py](https://github.com/myxp-lyp/Depression-detection/blob/main/Model%20training/audio.py): This file is used to train both "audio" and "qa_audio" model. To train these model, you will need to determine the base model used between line 197 and line 228. 
 
